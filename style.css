@@ -1,0 +1,162 @@
+body{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+
+}
+ .navbar-toggler {
+    transition: box-shadow 0.3s ease;
+}
+
+/* Box shadow on active state */
+.navbar-toggler.active {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.image-container {
+    width: 100%;
+    overflow: hidden;
+    margin-top: -100px;
+}
+.gradienttext {
+    background: -webkit-linear-gradient(#EC2424, #F04824);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.text-container {
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+
+
+/* styles.css */
+.gradient-bg {
+    background: linear-gradient(90deg, #EC2424 0%, #F04824 100%);
+}
+
+h1, p {
+    margin-bottom: 0;
+}
+
+.display-4 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.lead {
+    font-size: 1.25rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+.pricing-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    background: #fff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.price {
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: black;
+}
+.price-note {
+    font-size: 1rem;
+    color: #888;
+}
+.start-btn {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    background-color: #dc3545;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+.start-btn:hover {
+    background-color: #c82333;
+    color: #fff;
+}
+
+.WHAT{
+    background: -webkit-linear-gradient(#EC2424, #F04824);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.service-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    text-align: center;
+}
+.service-card .service-content {
+    flex-grow: 1;
+}
+.service-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+
+
+.btn-custom {
+    height: 50px;
+    min-width: 200px;
+}
+.btn-custom img {
+    height: 24px;
+}
+
+.feature-section {
+    padding: 60px 0;
+}
+.feature-image {
+    border-radius: 15px;
+    text-align: center;
+    padding: 40px;
+}
+.feature-image img {
+    border-radius: 15px;
+}
+.feature-text h2 {
+    color: #000;
+    font-weight: bold;
+}
+.feature-text h2 span {
+    color: #ff4500;
+}
+.feature-text p {
+    font-size: 1rem;
+    color: #6c757d;
+    margin-bottom: 30px;
+}
+.services {
+    list-style: none;
+    padding: 0;
+}
+.services li {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+}
+.services li i {
+    color: #6610f2;
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
