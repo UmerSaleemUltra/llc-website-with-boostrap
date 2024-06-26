@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap Navigation Bar</title>
@@ -11,100 +11,101 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="Orange Logo on Transparent Background-01.svg" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css">
-  </head>
-  <body>
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
     <!-- Navbar -->
     <nav style="height: 100px;" class="navbar navbar-expand-md d-none d-md-flex">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img style="height: 150px;" src="Orange Logo on Transparent Background-01.svg" alt="Logo">
-        </a>
-        <div class="collapse navbar-collapse justify-content-center" id="desktopNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">FAQS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-            <div class="d-flex justify-content-end align-items-center">
-              <button style="margin-left: 100px;" class="btn btn-danger"> Start Your Business </button>
+        <div class="container-fluid d-flex align-items-center">
+            <a class="navbar-brand" href="#">
+                <img style="height: 200px;" src="Orange Logo on Transparent Background-01.svg" alt="Logo">
+            </a>
+            <div class="collapse navbar-collapse justify-content-center" id="desktopNav">
+                <ul class="navbar-nav" style="margin-right: 30px;">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#Pricing">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#About">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#FAQS">FAQS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#div">Contact</a>
+                    </li>
+                </ul>
             </div>
-          </ul>
+            <div class="d-flex align-items-center">
+                <a href="#div"><button style="margin-left: 100px;" class="btn btn-danger ml-auto">Create Your LLC</button></a>
+            </div>
         </div>
-      </div>
     </nav>
     <!-- Mobile Navbar -->
     <nav class="navbar navbar-expand-md d-md-none">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img style="height: 150px;" src="Orange Logo on Transparent Background-01.svg" alt="Logo">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mobileNav" aria-controls="mobileNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="mobileNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">FAQS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-            <div class="d-flex">
-              <button class="btn btn-danger mt-2"> Create Your LLC </button>
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img style="height: 200px; margin-top: -50px;" src="Orange Logo on Transparent Background-01.svg" alt="Logo">
+            </a>
+            <button style="margin-top: -50px;" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mobileNav" aria-controls="mobileNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mobileNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#Pricing">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#About">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#FAQS">FAQS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#div">Contact</a>
+                    </li>
+                    <div class="d-flex">
+                        <a href="#div"><button class="btn btn-danger mt-2">Create Your LLC</button></a>
+                    </div>
+                </ul>
             </div>
-          </ul>
         </div>
-      </div>
     </nav>
     <!-- Hero Section -->
     <section>
-      <div class="container py-5 py-md-6 py-lg-7">
-        <div class="row justify-content-center text-center mb-5 mb-md-6 mb-lg-7">
-          <div class="col-12 col-md-10 col-lg-8">
-            <h1 class="mb-4 display-3 fw-bold">Start your US <span class="WHAT">Business</span> from Pakistan </h1>
-            <p class="mb-5 fs-5" style="margin-top: -20px;">At BuzzFiling, we provide everything you need to start your company, get an EIN, and open a US bank account, saving you lots of time. Contact our experts to get started!</p>
-            <!-- Button Wrap -->
-            <div style="margin-top: -20px;" class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3">
-                <button class="btn btn-danger btn-custom mb-3 mb-md-0">
-                    Create Your LLC
-                </button>  
-                <a href="https://api.whatsapp.com/send?phone=923394882800&text=Hi%20Buzz%20Filling%20team!%20Interested%20in%20launching%20my%20U.S.%20business.%20Can%20you%20help%3F%20%EF%BF%BD%0A%0A" class="btn btn-success d-flex align-items-center justify-content-center btn-custom">
-                    <img src="https://cdn.shopify.com/s/files/1/0073/2522/0979/files/whatsapp-icon.png?v=1615793565" alt="WhatsApp" class="me-2">
-                    Chat On WhatsApp
-                </a>
+        <div class="container py-5 py-md-6 py-lg-7">
+          <div class="row justify-content-center text-center mb-5 mb-md-6 mb-lg-7">
+            <div class="col-12 col-md-10 col-lg-8">
+              <h1 class="mb-4 display-3 fw-bold">Start your US <span class="WHAT">Business</span> from Pakistan </h1>
+              <p class="mb-5 fs-5" style="margin-top: -20px;">At BuzzFiling, we provide everything you need to start your company, get an EIN, and open a US bank account, saving you lots of time. Contact our experts to get started!</p>
+              <!-- Button Wrap -->
+              <div style="margin-top: -20px;" class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3">
+                  <button class="btn btn-danger btn-custom mb-3 mb-md-0">
+                      Create Your LLC
+                  </button>  
+                  <a href="https://api.whatsapp.com/send?phone=923394882800&text=Hi%20Buzz%20Filling%20team!%20Interested%20in%20launching%20my%20U.S.%20business.%20Can%20you%20help%3F%20%EF%BF%BD%0A%0A" class="btn btn-success d-flex align-items-center justify-content-center btn-custom">
+                      <img src="https://cdn.shopify.com/s/files/1/0073/2522/0979/files/whatsapp-icon.png?v=1615793565" alt="WhatsApp" class="me-2">
+                      Chat On WhatsApp
+                  </a>
+              </div>
+              
             </div>
-            
           </div>
         </div>
-      </div>
-      <img src="./banner-mobile-copy.png" alt="Mobile Banner Image" class="img-fluid d-block d-md-none">
-      <div class="container-fluid p-0">
-        <img style="margin-top: -90px;" src="./Privatily-banner-1444.png" alt="Desktop Banner Image" class="img-fluid d-none d-md-block">
-      </div>
-    </section>
+        <img src="./banner-mobile-copy.png" alt="Mobile Banner Image" class="img-fluid d-block d-md-none">
+        <div class="container-fluid p-0">
+          <img style="margin-top: -90px;" src="./Privatily-banner-1444.png" alt="Desktop Banner Image" class="img-fluid d-none d-md-block">
+        </div>
+      </section>
     <div class="container py-5" id="Pricing">
-        <h1 class="fw-bold text-center"> Simplified <span class="WHAT">Pricing</span>
+        <h1 class="fw-bold text-center">Simplified <span class="WHAT">Pricing</span>
             <span class="highlight-orange">for all your needs works</span>
         </h1>
         <br>
@@ -113,180 +114,404 @@
                 <div class="pricing-card">
                     <h5 class="font-bold mb-4">US Company Registration</h5>
                     <p class="text-base text-muted mb-6">In only few minutes, you may form an LLC or a Corp in State of the USA.</p>
-                    <div class="price">$120</div>
-                    <a href="#div" class="start-btn mt-2">Get Started</a>
+                    <br>
+                    <div class="price fw-bold">$79 + State Fees</div>
+                    <a href="#div" class="start-btn mt-2">Get Quote</a>
                 </div>
             </div>
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 p-2">
                 <div class="pricing-card featured">
                     <h5 class="font-bold mb-4">Complete Package</h5>
                     <p class="text-base mb-6">Save up to $100 by getting a complete package including Company formations, EIN, and US Bank Account.</p>
-                    <div class="price">$349</div>
-                    <a href="#div" class="start-btn mt-2">Get Started</a>
+                    <br>
+                    <div class="price fw-bold">$149 + State Fees</div>
+                    <a href="#div" class="start-btn mt-2">Get Quote</a>
                 </div>
             </div>
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 p-2">
                 <div class="pricing-card">
                     <h5 class="font-bold mb-4">US TAX Filing</h5>
                     <p class="text-base text-muted mb-6">Get in touch with our experts to file your Federal Income Tax Filing and State Tax Filing in USA.</p>
-                    <div class="price">$300</div>
-                    <a href="#div" class="start-btn mt-2">Get Started</a>
+                    <br>
+                    <div class="price fw-bold">$249 One-time Fee</div>
+                    <a href="#div" class="start-btn mt-2">Get Quote</a>
                 </div>
             </div>
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 p-2">
                 <div class="pricing-card">
-                    <h5 class="font-bold mb-4">ITIN - Taxpayer ID for Non U.S. Citizens</h5>
-                    <p class="text-base text-muted mb-6">ITIN is a substitute of SSN in USA. With ITIN non-U.S. citizens can easily deal with taxes, open U.S. bank account, and get going with business in USA.</p>
-                    <div class="price">$349</div>
-                    <a href="#div" class="start-btn mt-2">Get Started</a>
+                    <h5 class="font-bold mb-4">EIN Business Tax ID</h5>
+                    <p class="text-base text-muted mb-6">ITIN is a substitute of SSN in USA. With ITIN non-U.S. citizens can easily deal with taxes.</p>
+                    <br>
+                    <div class="price fw-bold">$99 One-time Fee</div>
+                    <a href="#div" class="start-btn mt-2">Get Quote</a>
                 </div>
             </div>
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 p-2">
                 <div class="pricing-card">
-                    <h5 class="font-bold mb-4">Trademark Registration in USA</h5>
-                    <p class="text-base text-muted mb-6">Protect Your Business and Brand Identity by Registering your Trademark in the United States.</p>
-                    <div class="price">$1000</div>
-                    <a href="#div" class="start-btn mt-2">Get Started</a>
+                    <h5 class="font-bold mb-4">ITIN for Non-US Residents</h5>
+                    <p class="text-base text-muted mb-6">An ITIN lets non-U.S. citizens handle taxes, open U.S. bank accounts, and access Stripe and PayPal.</p>
+                    <br>
+                    <div class="price fw-bold">$299 One-time Fee</div>
+                    <a href="#div" class="start-btn mt-2">Get Quote</a>
                 </div>
             </div>
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 p-2">
                 <div class="pricing-card">
-                    <h5 class="font-bold mb-4">US TAX Filing</h5>
+                    <h5 class="font-bold mb-4">Physical Bank Account</h5>
                     <p class="text-base text-muted mb-6">Get in touch with our experts to file your Federal Income Tax Filing and State Tax Filing in USA.</p>
-                    <div class="price">$300</div>
-                    <a href="#div" class="start-btn mt-2">Get Started</a>
+                    <br>
+                    <div class="price fw-bold">$1499 One-time Fee</div>
+                    <a href="#div" class="start-btn mt-2">Get Quote</a>
                 </div>
             </div>
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 p-2">
                 <div class="pricing-card">
-                    <h5 class="font-bold mb-4">ITIN - Taxpayer ID for Non U.S. Citizens</h5>
-                    <p class="text-base text-muted mb-6">ITIN is a substitute of SSN in USA. With ITIN non-U.S. citizens can easily deal with taxes, open U.S. bank account, and get going with business in USA.</p>
-                    <div class="price">$349</div>
-                    <a href="#div" class="start-btn mt-2">Get Started</a>
+                    <h5 class="font-bold mb-4">Business Website Setup</h5>
+                    <p class="text-base text-muted mb-6">Get in touch with our experts to file your Federal Income Tax Filing and State Tax Filing in USA.</p>
+                    <br>
+                    <div class="price fw-bold">$199 One-time Fee</div>
+                    <a href="#div" class="start-btn mt-2">Get Quote</a>
                 </div>
             </div>
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 p-2">
                 <div class="pricing-card">
-                    <h5 class="font-bold mb-4">Trademark Registration in USA</h5>
+                    <h5 class="font-bold mb-4">Trademark Registration</h5>
                     <p class="text-base text-muted mb-6">Protect Your Business and Brand Identity by Registering your Trademark in the United States.</p>
-                    <div class="price">$1000</div>
-                    <a href="#div" class="start-btn mt-2">Get Started</a>
+                    <br>
+                    <div class="price fw-bold">$899 One-time Fee</div>
+                    <a href="#div" class="start-btn mt-2">Get Quote</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container my-5" id="Features">
+        <div class="text-center mb-5">
+            <h1 class="fw-bold">We have Everything to <span class="WHAT">Setup your LLC</span></h1>
+        </div>
+        <div class="row gy-4">
+            <div class="col-md-6 col-lg-4">
+                <div class="service-card">
+                    <div class="service-icon">🔵</div>
+                    <div class="service-content">
+                        <h5>LLC Formation</h5>
+                        <p>Form your LLC in all 50 states in the US. We handle all the paperwork.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="service-card">
+                    <div class="service-icon">🗂️</div>
+                    <div class="service-content">
+                        <h5>State Filings</h5>
+                        <p>We handle all your document preparation, state filings, and related government fees.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="service-card">
+                    <div class="service-icon">📄</div>
+                    <div class="service-content">
+                        <h5>EIN</h5>
+                        <p>We’ll get your tax ID from the IRS and handle all related paperwork and signatures.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="service-card">
+                    <div class="service-icon">🏦</div>
+                    <div class="service-content">
+                        <h5>Business Bank Account</h5>
+                        <p>We’ll help you setup a business bank account with major banking partners in the US.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="service-card">
+                    <div class="service-icon">📈</div>
+                    <div class="service-content">
+                        <h5>Business Planning</h5>
+                        <p>Get expert advice on how to plan and grow your business efficiently.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="service-card">
+                    <div class="service-icon">⚖️</div>
+                    <div class="service-content">
+                        <h5>Legal Support</h5>
+                        <p>Access legal support to ensure your business complies with all regulations.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="service-card">
+                    <div class="service-icon">📋</div>
+                    <div class="service-content">
+                        <h5>Tax Filing</h5>
+                        <p>File your business taxes accurately and on time with our expert tax filing services.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- New Service Box: BOI Report Filing -->
+            <div class="col-md-6 col-lg-4">
+                <div class="service-card">
+                    <div class="service-icon">📊</div>
+                    <div class="service-content">
+                        <h5>BOI Report Filing</h5>
+                        <p>Ensure compliance by filing your Board of Investment reports efficiently.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="service-card">
+                    <div class="service-icon">🌐</div>
+                    <div class="service-content">
+                        <h5>Business Website Development</h5>
+                        <p>Build a professional website tailored to your business needs and branding.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    
-      <div class="container my-5">
-        <div class="text-center mb-5">
-          <h1 class="fw-bold">We have Everything to <span class="WHAT">Setup your LLC</span>
-          </h1>
-        </div>
-        <div class="row gy-4">
-          <div class="col-md-6 col-lg-4">
-            <div class="service-card">
-              <div class="service-icon">🔵</div>
-              <div class="service-content">
-                <h5>LLC Formation</h5>
-                <p>Form your LLC in all 50 states in the US. We handle all the paperwork.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="service-card">
-              <div class="service-icon">🗂️</div>
-              <div class="service-content">
-                <h5>State Filings</h5>
-                <p>We handle all your document preparation, state filings, and related government fees.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="service-card">
-              <div class="service-icon">📄</div>
-              <div class="service-content">
-                <h5>EIN</h5>
-                <p>We’ll get your tax ID from the IRS and handle all related paperwork and signatures.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="service-card">
-              <div class="service-icon">🏦</div>
-              <div class="service-content">
-                <h5>Business Bank Account</h5>
-                <p>We’ll help you setup a business bank account with major banking partners in the US.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="service-card">
-              <div class="service-icon">📈</div>
-              <div class="service-content">
-                <h5>Business Planning</h5>
-                <p>Get expert advice on how to plan and grow your business efficiently.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="service-card">
-              <div class="service-icon">⚖️</div>
-              <div class="service-content">
-                <h5>Legal Support</h5>
-                <p>Access legal support to ensure your business complies with all regulations.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="service-card">
-              <div class="service-icon">📋</div>
-              <div class="service-content">
-                <h5>Tax Filing</h5>
-                <p>File your business taxes accurately and on time with our expert tax filing services.</p>
-              </div>
-            </div>
-          </div>
-          <!-- New Service Box: BOI Report Filing -->
-          <div class="col-md-6 col-lg-4">
-            <div class="service-card">
-              <div class="service-icon">📊</div>
-              <div class="service-content">
-                <h5>BOI Report Filing</h5>
-                <p>Ensure compliance by filing your Board of Investment reports efficiently.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="service-card">
-              <div class="service-icon">🌐</div>
-              <div class="service-content">
-                <h5>Business Website Development</h5>
-                <p>Build a professional website tailored to your business needs and branding.</p>
-              </div>
-            </div>
-          </div>
-          <div class="container feature-section">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="feature-image">
-                        <img src="https://www.doola.com/wp-content/uploads/2024/02/Frame-3016108-600x556-1.webp" alt="Feature Image" class="img-fluid">
+    <div style="margin-top: -80px;" class="container py-5">
+        <h1 id="About" class="text-center mb-5 fw-bold">Why Choose <span class="WHAT">BuzzFilling</span></h1>
+        <p style="margin-top: -5px;" class="text-center">We have been helping people start businesses all over the world for more than five years.</p>
+        <br>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <div class="card-icon">💰</div>
+                        <h5 class="card-title">Affordable Pricing</h5>
+                        <p class="card-text">We offer competitive pricing to help you save on formation costs.</p>
                     </div>
                 </div>
-                <div class="col-md-6 feature-text">
-                    <h2>Boosty: <span>Expand Globally, Effortlessly</span></h2>
-                    <p>Boosty breaks geographic boundaries, empowering business expansion. We facilitate access to vital services by assisting in U.S.</p>
-                    <ul class="services row">
-                        <li class="col-sm-6"><i class="bi bi-building"></i> Form U.S. company</li>
-                        <li class="col-sm-6"><i class="bi bi-person-badge"></i> Obtain EIN or ITIN</li>
-                        <li class="col-sm-6"><i class="bi bi-credit-card"></i> Open Stripe/PayPal</li>
-                        <li class="col-sm-6"><i class="bi bi-bank"></i> Open Business Bank</li>
-                        <li class="col-sm-6"><i class="bi bi-cart"></i> Create Amazon Account</li>
-                        <li class="col-sm-6"><i class="bi bi-code-slash"></i> Website Development</li>
-                    </ul>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <div class="card-icon">📞</div>
+                        <h5 class="card-title">Top Communication</h5>
+                        <p class="card-text">Our team ensures clear and prompt communication at every step.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <div class="card-icon">👨‍🏫</div>
+                        <h5 class="card-title">Experts Advice</h5>
+                        <p class="card-text">Receive guidance from industry experts to help you succeed.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <div class="card-icon">🕒</div>
+                        <h5 class="card-title">Lifetime Support</h5>
+                        <p class="card-text">Enjoy lifetime support for your business needs and queries.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <div class="card-icon">📊</div>
+                        <h5 class="card-title">Track Record</h5>
+                        <p class="card-text">Proven track record of successful LLC formations.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <div class="card-icon">⚡</div>
+                        <h5 class="card-title">Quick and Simple</h5>
+                        <p class="card-text">Fast and easy LLC formation process to get you up and running quickly.</p>
+                    </div>
                 </div>
             </div>
         </div>
-          <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
-</html>
+    </div>
+
+    <div id="div" style="margin-top: 80px;">
+    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+    <br>
+    <script>
+        hbspt.forms.create({
+            region: "na1",
+            portalId: "46266678",
+            formId: "990bd1ef-ec76-45c6-9f03-19aa7f492906"
+        });
+    </script>
+</div>
+<br>
+    <div class="container py-5" id="FAQS">
+        <h2 class="text-center faq-title mb-4">Frequently Asked <span class="WHAT">Questions</span> ?</h2>
+        <div class="accordion" id="faqAccordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        Do I need to be a US citizen to work with BuzzFiling?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        No, you do not need to be a U.S. citizen. As a non-U.S. resident, you can easily form a company with BuzzFiling without being physically present in the United States.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        What is the overall process to form a company?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Forming a company in the U.S. with us is simple. Provide us with your personal details and a valid ID, such as a national identity card or passport. Then, suggest a unique name for your company. We will take care of the rest and create your U.S. company in any state you prefer, quickly and easily.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        How much does it cost to set up a U.S. company with BuzzFiling?
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        The cost of forming a U.S. company has two main parts. The first part is the state fee, which can vary depending on the state, usually ranging from $50 to $500. The second part is the fee for BuzzFiling's services, which is $199 for everything, including company formation, obtaining an EIN, opening a bank account, and filing the Boi report.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        What information do you need from me to get started?
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        To start your U.S. company, we require your ID card, such as a National Identity Card (in English) or your passport. Please also provide your home address and suggest a unique name for your company!
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        How long will it take to file my company?
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        The time to form your company depends on the state you choose. In some states like Wyoming, we can complete it in just one (1) day, while others might take up to two weeks (14 days). After setting up your company, we will obtain your Employer Identification Number (EIN) from the IRS within 20 working days. Opening your business bank account typically takes around a week after obtaining your EIN.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSix">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                        How can I trust you?
+                    </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        You can trust BuzzFiling because we have helped many businesses, we simplify everything and work efficiently, we communicate clearly, and we offer a money-back guarantee if needed.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+  <!-- Footer 6 - Bootstrap Brain Component -->
+<footer class="footer">
+
+    <!-- Widgets - Bootstrap Brain Component -->
+    <div class="bg-light py-3 py-md-5 py-xl-8 border-top border-light-subtle">
+      <div class="container overflow-hidden">
+        <div class="row gy-3 gy-md-5 gy-xl-0 align-items-sm-center">
+          <div class="col-xs-12 col-sm-6 col-xl-3 order-0 order-xl-0">
+            <div class="footer-logo-wrapper text-center text-sm-start">
+              <a href="#!">
+                <img style="height: 200px;" src="Orange Logo on Transparent Background-01.svg" alt="BootstrapBrain Logo" width="175" height="57">
+              </a>
+            </div>
+          </div>
+  <br>
+  <br>
+          <div class="col-xs-12 col-xl-6 order-2 order-xl-1">
+            <ul class="nav justify-content-center">
+              <li class="nav-item">
+                <a class="nav-link link-secondary px-2 px-md-3" href="#Pricing">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-secondary px-2 px-md-3" href="#Features">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-secondary px-2 px-md-3" href="#About">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-secondary px-2 px-md-3" href="#FAQS">FAQS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-secondary px-2 px-md-3" href="#div">Contact</a>
+              </li>
+            </ul>
+          </div>
+  
+          <div class="col-xs-12 col-sm-6 col-xl-3 order-1 order-xl-2">
+            <div class="social-media-wrapper">
+              <ul class="list-unstyled m-0 p-0 d-flex justify-content-center justify-content-sm-end">
+                <li class="me-3">
+                  <a href="https://www.facebook.com/BuzzFilling" class="link-dark link-opacity-75-hover">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                      <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                    </svg>
+                  </a>
+                </li>
+             
+                <li class="me-3">
+                  <a href="https://x.com/Buzzfilling" class="link-dark link-opacity-75-hover">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                      <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                    </svg>
+                  </a>
+                </li>
+                <li class="">
+                  <a href="https://instagram.com/BuzzFilling" class="link-dark link-opacity-75-hover">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                      <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Copyright - Bootstrap Brain Component -->
+    <div class="bg-light py-3 py-md-5 border-top border-light-subtle">
+      <div class="container overflow-hidden">
+        <div class="row">
+          <div class="col">
+            <div class="footer-copyright-wrapper text-center">
+              &copy; 2024. All Rights Reserved.
+            </div>
+         
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
